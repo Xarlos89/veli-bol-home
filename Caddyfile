@@ -1,0 +1,25 @@
+# Veli Bol — Caddyfile
+# Replace yourdomain.com with your actual domain before deploying.
+# Caddy automatically provisions and renews TLS via Let's Encrypt.
+
+yourdomain.com {
+	root * /var/www/veli-bol
+
+	# Encode responses with gzip
+	encode gzip
+
+	# Serve static files; fall back to index.html for SPA client-side routing.
+	# HashRouter handles all in-app routes via the URL hash, so the server
+	# only ever needs to serve index.html — but the try_files directive
+	# ensures direct asset requests (JS, CSS, images) still resolve correctly.
+	try_files {path} /index.html
+
+	file_server
+
+	# Cache immutable Vite-hashed assets aggressively; revalidate HTML each request.
+	@assets {
+		path /assets/*
+	}
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+	header /index.html Cache-Control "no-cache, no-store, must-revalidate"
+}
