@@ -1,114 +1,62 @@
-import { useState, useEffect } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 
-const links = [
-  { to: '/', label: 'Home' },
-  { to: '/history', label: 'Our Story' },
-  { to: '/tours', label: 'Tours' },
-  { to: '/contact', label: 'Contact' },
+const navLinks = [
+  { label: 'Tour Info', href: '#essentials' },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Food', href: '#food' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
-  useEffect(() => {
-    setMenuOpen(false)
-  }, [location])
-
-  const isHome = location.pathname === '/'
-  const transparent = isHome && !scrolled && !menuOpen
+  const [open, setOpen] = useState(false)
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        transparent ? 'bg-transparent' : 'bg-sea-deep shadow-lg'
-      }`}
-    >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        {/* Logo */}
-        <NavLink to="/" className="flex items-center gap-2 group">
-          <span className="text-2xl">⛵</span>
-          <div className="leading-tight">
-            <div className="font-display font-bold text-white text-lg leading-none">Veli Bol</div>
-            <div className="text-xs text-sea-light font-body tracking-wide">Bol, Croatia</div>
-          </div>
-        </NavLink>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-soft">
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
+        <a href="#" className="font-serif text-lg text-ink leading-none">
+          Veli Bol <em>Excursions</em>
+        </a>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-1">
-          {links.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={to === '/'}
-              className={({ isActive }) =>
-                `px-4 py-2 rounded-full font-display font-semibold text-sm transition-colors duration-200 ${
-                  isActive
-                    ? 'bg-sunset-orange text-white'
-                    : 'text-white hover:bg-white/10'
-                }`
-              }
-            >
-              {label}
-            </NavLink>
-          ))}
-          <a
-            href="tel:+385957420929"
-            className="ml-4 btn-primary !py-2 !px-5 text-sm"
-          >
-            Book Now
-          </a>
-        </div>
-
-        {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          onClick={() => setOpen(!open)}
+          className="text-ink p-1"
+          aria-label="Menu"
         >
-          {menuOpen ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          {open ? (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
             </svg>
           )}
         </button>
-      </nav>
+      </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-sea-deep border-t border-white/10 px-4 pb-4">
-          {links.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={to === '/'}
-              className={({ isActive }) =>
-                `block py-3 px-2 font-display font-semibold text-base border-b border-white/10 transition-colors ${
-                  isActive ? 'text-sunset-orange' : 'text-white'
-                }`
-              }
+      {open && (
+        <div className="bg-cream border-t border-soft px-5 sm:px-8 py-5">
+          <nav className="flex flex-col gap-1">
+            {navLinks.map(({ label, href }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setOpen(false)}
+                className="font-sans text-sm text-ink/70 hover:text-ink py-2 border-b border-soft/50 transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+            <a
+              href="tel:+385957420929"
+              className="mt-4 btn-dark w-full text-center"
+              onClick={() => setOpen(false)}
             >
-              {label}
-            </NavLink>
-          ))}
-          <a
-            href="tel:+385957420929"
-            className="block mt-4 btn-primary text-center"
-          >
-            Book Now · +385 95 742 09 29
-          </a>
+              Book your seat →
+            </a>
+          </nav>
         </div>
       )}
     </header>
