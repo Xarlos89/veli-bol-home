@@ -31,8 +31,11 @@ jobs:
       - name: Build
         run: npm run build
 
+<<<<<<< HEAD
       - uses: actions/configure-pages@v6.0.0
 
+=======
+>>>>>>> bde1d15 (Update Actions to latest versions, bump Node to 26)
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: dist
