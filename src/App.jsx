@@ -6,6 +6,9 @@ import About from './sections/About'
 import Experience from './sections/Experience'
 import FoodOnBoard from './sections/FoodOnBoard'
 import Gallery from './sections/Gallery'
+import Reviews from './sections/Reviews'
+import FAQ from './sections/FAQ'
+import BookingCTA from './sections/BookingCTA'
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
         <Experience />
         <FoodOnBoard />
         <Gallery />
+        <Reviews />
+        <FAQ />
+        <BookingCTA />
       </main>
       <Footer />
     </>

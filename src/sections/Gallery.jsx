@@ -1,9 +1,9 @@
 const photos = [
-  { src: '/images/boat.jpg', alt: 'The Veli Bol boat at harbor' },
+  { src: null, alt: 'The Veli Bol boat at harbor' },
   { src: null, alt: 'Hidden bay aerial view' },
   { src: null, alt: 'Boat in a cove' },
   { src: null, alt: 'Open sea, calm water' },
-  { src: '/images/billboard.jpg', alt: 'Veli Bol tour offerings' },
+  { src: null, alt: 'Crew and guests on deck' },
   { src: null, alt: 'Aerial of Brač coastline' },
 ]
 

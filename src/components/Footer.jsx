@@ -13,16 +13,20 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="label-light text-amber text-[10px] mb-3">Find us</div>
-          <address className="not-italic text-xs leading-relaxed text-cream/60">
-            Ul. Bolskih Pomoraca<br />
-            21420 Bol, Brač<br />
-            Croatia
-          </address>
+          <div className="label-light text-amber text-[10px] mb-3">Explore</div>
+          <nav className="flex flex-col gap-2 text-xs text-cream/60">
+            <a href="#essentials" className="hover:text-cream transition-colors">Tour Info</a>
+            <a href="#about" className="hover:text-cream transition-colors">About</a>
+            <a href="#experience" className="hover:text-cream transition-colors">Experience</a>
+            <a href="#food" className="hover:text-cream transition-colors">Food</a>
+            <a href="#gallery" className="hover:text-cream transition-colors">Gallery</a>
+            <a href="#reviews" className="hover:text-cream transition-colors">Reviews</a>
+            <a href="#faq" className="hover:text-cream transition-colors">FAQ</a>
+          </nav>
         </div>
 
         <div>
-          <div className="label-light text-amber text-[10px] mb-3">Contact</div>
+          <div className="label-light text-amber text-[10px] mb-3">Get in touch</div>
           <ul className="text-xs space-y-2 text-cream/60">
             <li>
               <a href="tel:+385957420929" className="hover:text-cream transition-colors">
@@ -32,6 +36,11 @@ export default function Footer() {
             <li>
               <a href="mailto:milankarmelic@gmail.com" className="hover:text-cream transition-colors">
                 milankarmelic@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/385957420929" target="_blank" rel="noopener noreferrer" className="hover:text-cream transition-colors">
+                WhatsApp
               </a>
             </li>
           </ul>
