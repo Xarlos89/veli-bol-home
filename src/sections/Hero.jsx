@@ -1,13 +1,12 @@
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden">
-      {/* Background */}
-      <img
-        src="/images/boat.jpg"
-        alt="Veli Bol boat in a hidden Adriatic bay"
-        className="absolute inset-0 w-full h-full object-cover object-center"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-navy/20" />
+      {/* Background — drone photo placeholder (real photo coming soon) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-teal-800 via-cyan-700 to-teal-900" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/30 to-transparent" />
+      <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-px">
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 font-sans text-[9px] tracking-[0.2em] uppercase text-white/20 whitespace-nowrap">📷 Drone photo coming soon</span>
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 w-full">

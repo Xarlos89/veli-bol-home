@@ -5,12 +5,16 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* Photo */}
-          <div className="rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
+          <div className="relative rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
             <img
               src="/images/boat.jpg"
               alt="The Veli Bol boat with captain"
               className="w-full h-full object-cover"
             />
+            <div className="absolute bottom-3 right-3 bg-white rounded-2xl p-3 shadow-md">
+              <p className="font-sans text-[10px] text-gray-400 leading-none mb-0.5">🤍 Family-run</p>
+              <p className="font-sans font-semibold text-ink text-xs leading-none">EST. 1994</p>
+            </div>
           </div>
 
           {/* Text */}
