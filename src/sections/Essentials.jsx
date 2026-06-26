@@ -35,7 +35,7 @@ export default function Essentials() {
               ))}
             </div>
 
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
+            <div className="bg-white rounded-2xl p-5 shadow-md">
               <p className="font-sans font-semibold text-ink text-sm mb-4">What's included</p>
               <ul className="space-y-2.5">
                 {included.map((item) => (
@@ -53,7 +53,7 @@ export default function Essentials() {
           {/* Right */}
           <div className="flex flex-col gap-5">
             {/* Pricing card */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <div className="bg-white rounded-2xl p-6 shadow-md">
               <p className="label mb-3">Pricing</p>
               <h3 className="font-serif font-bold text-ink text-2xl mb-5 leading-tight">
                 Simple &amp;<br />transparent
@@ -88,10 +88,10 @@ export default function Essentials() {
             </div>
 
             {/* Map */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <iframe
                 title="Bol harbor"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.5!2d16.6523!3d43.2629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13354c5b6c2cd2c1%3A0x5c1c1c1c1c1c1c1c!2sBol%2C+Croatia!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://maps.google.com/maps?q=Ul.+Bolskih+Pomoraca,+Bol,+Brac,+Croatia&z=16&output=embed"
                 width="100%"
                 height="200"
                 style={{ border: 0, display: 'block' }}

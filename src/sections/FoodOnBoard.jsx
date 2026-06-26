@@ -38,7 +38,7 @@ export default function FoodOnBoard() {
             Optional add-ons — let us know when booking via WhatsApp.
           </p>
 
-          <div className="bg-white rounded-2xl shadow-sm px-5 divide-y divide-soft">
+          <div className="bg-white rounded-2xl shadow-md px-5 divide-y divide-soft">
             {menu.map(({ name, desc, price }) => (
               <div key={name} className="flex items-start justify-between gap-4 py-5">
                 <div>

@@ -56,7 +56,7 @@ export default function FAQ() {
           <h2 className="section-heading">Good to know</h2>
         </div>
 
-        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-sm px-6">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-md px-6">
           {faqs.map(({ q, a }) => (
             <FAQItem key={q} q={q} a={a} />
           ))}
