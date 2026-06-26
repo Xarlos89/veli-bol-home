@@ -2,7 +2,7 @@
 # Replace yourdomain.com with your actual domain before deploying.
 # Caddy automatically provisions and renews TLS via Let's Encrypt.
 
-yourdomain.com {
+excursion-veli-bol.com {
 	root * /var/www/veli-bol
 
 	# Encode responses with gzip
