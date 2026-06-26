@@ -4,7 +4,7 @@ const photos = [
   { src: '/images/family-lunch.jpg', alt: 'Family lunch on board' },
   { src: '/images/zlatni-rat.jpg', alt: 'Zlatni Rat beach from the water' },
   { src: '/images/on-deck.jpg', alt: 'Guests on deck' },
-  { src: null, alt: 'More moments on the water' },
+  { src: '/images/water-sports.jpg', alt: 'Water sports and fun on the Adriatic' },
 ]
 
 function GallerySlot({ src, alt }) {
