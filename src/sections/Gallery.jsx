@@ -1,10 +1,10 @@
 const photos = [
-  { src: null, alt: 'The Veli Bol boat at harbor' },
-  { src: null, alt: 'Hidden bay aerial view' },
-  { src: null, alt: 'Boat in a cove' },
-  { src: null, alt: 'Open sea, calm water' },
-  { src: null, alt: 'Crew and guests on deck' },
-  { src: null, alt: 'Aerial of Brač coastline' },
+  { src: '/images/underwater.jpg', alt: 'Swimming in crystal clear water' },
+  { src: '/images/sunset.jpg', alt: 'Sunset over the Adriatic' },
+  { src: '/images/family-lunch.jpg', alt: 'Family lunch on board' },
+  { src: '/images/zlatni-rat.jpg', alt: 'Zlatni Rat beach from the water' },
+  { src: '/images/on-deck.jpg', alt: 'Guests on deck' },
+  { src: null, alt: 'More moments on the water' },
 ]
 
 function GallerySlot({ src, alt }) {
