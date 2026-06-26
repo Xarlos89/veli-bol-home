@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 
 const navLinks = [
+  { label: 'Tour', href: '#essentials' },
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Tour', href: '#essentials' },
   { label: 'Food', href: '#food' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Reviews', href: '#reviews' },
