@@ -90,8 +90,8 @@ export default function Essentials() {
             {/* Map */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <iframe
-                title="Bol harbor"
-                src="https://maps.google.com/maps?q=Ul.+Bolskih+Pomoraca,+Bol,+Brac,+Croatia&z=16&output=embed"
+                title="Excursion boat Veli, Bol"
+                src="https://maps.google.com/maps?q=Excursion+boat+%22Veli%22+Bol&ll=43.2615951,16.6571911&z=17&output=embed"
                 width="100%"
                 height="200"
                 style={{ border: 0, display: 'block' }}
