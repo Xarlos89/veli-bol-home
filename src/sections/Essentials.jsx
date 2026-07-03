@@ -1,8 +1,8 @@
 const infoCards = [
-  { label: 'Duration', value: 'Half day' },
+  { label: 'Duration', value: 'Half day', sub: '6h total · 1h sail · 5h swim' },
   { label: 'Schedule', value: '10:00 – approx. 16:00' },
-  { label: 'Destination', value: 'Island Hvar' },
-  { label: 'Group size', value: 'Max 40 · avg. 6 in 2025' },
+  { label: 'Destination', value: 'Island Hvar', sub: 'across the channel from Bol' },
+  { label: 'Group size', value: 'Max 40 · avg. ~10 guests' },
 ]
 
 const included = [
@@ -12,6 +12,7 @@ const included = [
   'No stress, no drama and no pressure',
   'Snorkeling equipment on board',
   'Stand up boards for all to share',
+  'Slide for extra style points!',
 ]
 
 export default function Essentials() {

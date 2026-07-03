@@ -24,9 +24,10 @@ export default function About() {
               A small boat.<br />Big Adriatic days.
             </h2>
             <p className="font-sans text-gray-500 text-sm leading-relaxed mb-8">
-              Family-run from Bol, Brač since 1994. A handful of guests, a different hidden bay every day.
-              We take you to coves only locals know — no crowds, no loud music, no itinerary you can't change.
-              Just the sea, the boat, and time to swim.
+              Our wooden motosailer was handcrafted by my father, and I've been sailing her out of Bol since 1994.
+              She has six tables — one for each group — so you always have your own corner of the boat.
+              Two decks: a shaded lower and an open sunny upper. There's a slide too, if you feel like it.
+              We go where the water is calm and the coves are quiet. No hidden fees, ever — just the price you agreed.
             </p>
 
             <div className="flex flex-col gap-3">
