@@ -55,7 +55,6 @@
 
   .wa-btn {
     position: relative;
-    isolation: isolate;
   }
 
   .wa-btn-ring {
@@ -64,7 +63,7 @@
     border-radius: 9999px;
     background-color: #25D366;
     animation: wa-ping 1.8s ease-out infinite;
-    z-index: -1;
+    z-index: 0;
   }
 }
 

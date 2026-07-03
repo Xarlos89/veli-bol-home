@@ -1,17 +1,17 @@
 const infoCards = [
-  { label: 'Duration', value: '6 hours', sub: '1h sail · 5h swim' },
+  { label: 'Duration', value: 'Half day' },
   { label: 'Schedule', value: '10:00 – approx. 16:00' },
-  { label: 'Destination', value: 'Hidden bays around Hvar' },
-  { label: 'Group size', value: 'Max 40 · avg. 10 guests' },
+  { label: 'Destination', value: 'Island Hvar' },
+  { label: 'Group size', value: 'Max 40 · avg. 6 in 2025' },
 ]
 
 const included = [
   'Two different swimming stops per trip',
   'Every day a different bay',
   'Family and couples oriented',
-  'No loud music, no animation, no stress',
+  'No stress, no drama and no pressure',
   'Snorkeling equipment on board',
-  'Friendly local crew, fluent in English',
+  'Stand up boards for all to share',
 ]
 
 export default function Essentials() {
