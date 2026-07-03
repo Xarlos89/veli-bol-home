@@ -5,7 +5,8 @@ export default function Hero() {
       <img
         src="/images/hero.jpeg"
         alt="Veli Bol boat in a hidden Adriatic bay, aerial view"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: '30% 35%' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/45 to-navy/20" />
 
