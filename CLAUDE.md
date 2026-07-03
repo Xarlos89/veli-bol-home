@@ -33,6 +33,9 @@ src/
     Experience.jsx   dark navy "six reasons" grid
     FoodOnBoard.jsx  menu add-ons
     Gallery.jsx      2-col photo grid
+    Reviews.jsx      dark navy testimonials, `reviews` array
+    FAQ.jsx          accordion, `faqs` array (uses useState per item)
+    BookingCTA.jsx   closing call-to-action (#book)
   App.jsx            imports and orders all sections
   main.jsx           ReactDOM.createRoot
   index.css          @tailwind directives + .label, .section-heading, .btn-dark, .info-card
@@ -69,7 +72,9 @@ Fonts: **Playfair Display** (serif — headings, logo, italic) · **Inter** (san
 
 ## Section IDs (for anchor links)
 
-`#home` · `#essentials` · `#about` · `#experience` · `#food` · `#gallery` · `#contact` (footer)
+`#home` · `#essentials` · `#about` · `#experience` · `#food` · `#gallery` · `#reviews` · `#faq` · `#book` · `#contact` (footer)
+
+Note: the Navbar currently only links to `#home` and `#book` — the other IDs exist for direct/deep linking.
 
 ## Content that changes seasonally
 
@@ -80,7 +85,7 @@ Fonts: **Playfair Display** (serif — headings, logo, italic) · **Inter** (san
 ## Adding photos
 
 1. Drop image into `public/images/` (JPG or WebP, keep under 400 KB)
-2. In `src/sections/Gallery.jsx`, replace a `src: null` entry with `src: '/images/filename.jpg'`
+2. In `src/sections/Gallery.jsx`, edit the `photos` array — each entry is `{ src: '/images/filename.jpg', alt: '...' }`. A `GallerySlot` with a falsy `src` renders a `cream-dark` "Photo coming soon" placeholder, so `src: null` is still a valid way to leave a slot empty.
 3. Push to `main` — Actions builds and deploys automatically
 
 ## Deployment
@@ -93,6 +98,6 @@ Fonts: **Playfair Display** (serif — headings, logo, italic) · **Inter** (san
 
 ## What's placeholder / not yet real
 
-- Gallery slots 2, 3, 4, 6 — `src: null` in `Gallery.jsx`, renders `cream-dark` placeholder
+- All six Gallery slots are filled (`photos` array in `Gallery.jsx`); any slot with a falsy `src` falls back to a `cream-dark` "Photo coming soon" placeholder
 - Google Maps embed in `Essentials.jsx` uses a placeholder embed URL — replace with a real embed from Google Maps if needed
 - Crew bios — not present in current design (removed in redesign)

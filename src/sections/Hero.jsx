@@ -7,11 +7,11 @@ export default function Hero() {
         alt="Veli Bol boat in a hidden Adriatic bay, aerial view"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/45 to-navy/20" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 w-full">
-        <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/60 mb-5">
+      <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 w-full [text-shadow:0_2px_16px_rgba(12,27,43,0.55)]">
+        <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/70 mb-5">
           Bol · Brač · Croatia
         </p>
 
@@ -20,11 +20,11 @@ export default function Hero() {
           <em>Excursions</em>
         </h1>
 
-        <p className="font-serif italic text-white/85 text-lg sm:text-xl max-w-md leading-snug mb-4">
+        <p className="font-serif italic text-white/90 text-lg sm:text-xl max-w-md leading-snug mb-4">
           A quiet half-day on the Adriatic — hidden bays, slow lunch, nothing rushed.
         </p>
 
-        <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/50 mb-8">
+        <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/60 mb-8">
           You decide where you want to swim
         </p>
 

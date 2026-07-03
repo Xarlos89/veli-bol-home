@@ -5,9 +5,9 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* Photo */}
-          <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-[4/3]">
+          <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-[4/5] bg-cream-dark">
             <img
-              src="/images/boat.jpg"
+              src="/images/veli-bol-pride.jpeg"
               alt="The Veli Bol boat with captain"
               className="w-full h-full object-cover"
             />
