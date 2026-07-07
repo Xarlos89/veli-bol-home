@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-soft transition-transform duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-cream border-b border-soft transition-transform duration-300 ${
         visible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
