@@ -20,8 +20,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-cream border-b border-soft transition-transform duration-300 ${
-        visible ? 'translate-y-0' : '-translate-y-full'
+      className={`fixed top-0 left-0 right-0 z-50 bg-cream border-b border-soft transition-opacity duration-300 ${
+        visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
     >
       <div className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
