@@ -54,6 +54,29 @@ export default function Reviews() {
           </p>
         </div>
 
+        <div className="max-w-3xl mx-auto mb-12 rounded-2xl border border-amber/30 bg-white/5 p-8 sm:p-10 text-center">
+          <p className="label mb-5">As featured in</p>
+          <blockquote className="font-serif italic text-white text-lg sm:text-xl leading-relaxed">
+            “The other standout from this visit was a sailing trip we did with
+            Milan, the owner of the excursion boat Veli, based in Bol. I will be
+            honest — I have done a lot of boat trips along the Dalmatian coast
+            over the years, and a lot of them blur together. This one did not. It
+            was just a fantastic experience, and Milan clearly knows what he is
+            doing.”
+          </blockquote>
+          <p className="font-sans text-sm text-white/60 mt-6">
+            Morten Smalby ·{' '}
+            <a
+              href="https://mortensmalby.com/bol-croatia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber hover:text-white underline underline-offset-2 transition-colors"
+            >
+              Bol on Brač Island — A Local’s Guide
+            </a>
+          </p>
+        </div>
+
         <div className="grid sm:grid-cols-2 gap-4">
           {reviews.map(({ name, country, text }) => (
             <div key={name} className="bg-white rounded-2xl p-6 relative">
