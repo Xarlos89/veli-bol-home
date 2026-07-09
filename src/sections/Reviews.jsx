@@ -41,7 +41,17 @@ export default function Reviews() {
           <p className="label mb-4">Reviews</p>
           <h2 className="section-heading-light mb-4">100% Recommend</h2>
           <Stars center />
-          <p className="font-sans text-sm text-white/40 mt-3">Based on 38 guest reviews</p>
+          <p className="font-sans text-sm text-white/40 mt-3">
+            Based on 38 guest reviews ·{' '}
+            <a
+              href="https://maps.app.goo.gl/SpNcdWgtLhwKhRzH7?g_st=ac"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber hover:text-white underline underline-offset-2 transition-colors"
+            >
+              View on Google
+            </a>
+          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
@@ -58,6 +68,17 @@ export default function Reviews() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="https://maps.app.goo.gl/SpNcdWgtLhwKhRzH7?g_st=ac"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-light text-xs tracking-widest uppercase"
+          >
+            Read all reviews on Google
+          </a>
         </div>
       </div>
     </section>
