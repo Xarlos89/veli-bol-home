@@ -1,7 +1,7 @@
 const menu = [
   {
     name: 'Full grill',
-    desc: '3-course meal: hot appetisers (anchovies & shrimps on bruschetta, grilled cheese with olives) · grilled mackerel with vegetables · fresh crepes with Nutella, Lino Lada, fig jam or quince marmalade. Local red wine & water included.',
+    desc: '3-course meal: hot appetisers (anchovies on bruschetta, grilled cheese with olives) · grilled mackerel with vegetables · fresh crepes with Nutella, Lino Lada, fig jam or quince marmalade. Local red wine & water included.',
     price: '€55',
   },
   {
