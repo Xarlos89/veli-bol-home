@@ -24,10 +24,11 @@ export default function About() {
               A small boat.<br />Big Adriatic days.
             </h2>
             <p className="font-sans text-gray-500 text-sm leading-relaxed mb-8">
-              Our wooden motosailer was handcrafted by my father, and I've been sailing her out of Bol since 1994.
-              She has six tables — one for each group — so you always have your own corner of the boat.
-              Two decks: a shaded lower and an open sunny upper. There's a slide too, if you feel like it.
-              We go where the water is calm and the coves are quiet. No hidden fees, ever — just the price you agreed.
+              Our wooden motosailer was handcrafted by my father, and we've been sailing her out of Bol since 2000.
+              Six tables on the main deck — one for each group — so you always have your own corner of the boat, in the shade.
+              The upper deck is open and sunny, with platforms to jump from and a slide if you feel like it — and if not,
+              there's snorkeling gear and paddleboards. Toilet aboard, food options available. We anchor where the water is
+              calm and the coves are quiet. No hidden fees, no extra costs — €65 for the ticket, €55 for the food package.
             </p>
 
             <div className="flex flex-col gap-3">
