@@ -2,13 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Veli Bol Excursions — a quiet half-day on the Adriatic. Hidden bays, slow lunch, nothing rushed. Family-run from Bol, Brač since 1994." />
+
+    <!-- Primary meta -->
+    <title>Veli Bol Excursions — Boat Tours from Bol, Croatia | Hidden Bays</title>
+    <meta name="description" content="Veli Bol Excursions — a quiet half-day boat tour from Bol, Brač. Hidden Adriatic bays, swimming stops, snorkeling, slow lunch. Family-run since 1994. €65 per adult." />
+    <link rel="canonical" href="https://excursion-veli-bol.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Veli Bol Excursions" />
+    <meta name="theme-color" content="#0C1B2B" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Veli Bol Excursions" />
+    <meta property="og:title" content="Veli Bol Excursions — Boat Tours from Bol, Croatia" />
+    <meta property="og:description" content="A quiet half-day boat tour from Bol, Brač. Hidden Adriatic bays, swimming, snorkeling, slow lunch. Family-run since 1994." />
+    <meta property="og:url" content="https://excursion-veli-bol.com/" />
+    <meta property="og:image" content="https://excursion-veli-bol.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Veli Bol boat anchored in a hidden Adriatic bay near Bol, Croatia" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Veli Bol Excursions — Boat Tours from Bol, Croatia" />
+    <meta name="twitter:description" content="A quiet half-day boat tour from Bol, Brač. Hidden Adriatic bays, swimming, snorkeling, slow lunch. Family-run since 1994." />
+    <meta name="twitter:image" content="https://excursion-veli-bol.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Veli Bol boat anchored in a hidden Adriatic bay near Bol, Croatia" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
-    <title>Veli Bol Excursions — Hidden Bays, Bol Croatia</title>
+
+    <!-- Preload the LCP hero image -->
+    <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["TravelAgency", "LocalBusiness"],
+          "@id": "https://excursion-veli-bol.com/#business",
+          "name": "Veli Bol Excursions",
+          "url": "https://excursion-veli-bol.com/",
+          "image": "https://excursion-veli-bol.com/og-image.jpg",
+          "description": "Family-run half-day boat excursions from Bol on Brač island, Croatia. Hidden Adriatic bays, swimming stops, snorkeling and paddleboards, and a slow lunch aboard a handcrafted wooden motosailer.",
+          "telephone": "+385957420929",
+          "email": "milankarmelic@gmail.com",
+          "priceRange": "€€",
+          "foundingDate": "1994",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Porat — Ul. Bolskih Pomoraca",
+            "addressLocality": "Bol",
+            "addressRegion": "Brač",
+            "addressCountry": "HR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.2621,
+            "longitude": 16.6558
+          },
+          "areaServed": "Bol, Brač, Croatia",
+          "sameAs": [
+            "https://www.instagram.com/excursion_veli_bol",
+            "https://maps.app.goo.gl/SpNcdWgtLhwKhRzH7"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "38"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://excursion-veli-bol.com/#excursion",
+          "name": "Half-Day Boat Excursion from Bol",
+          "description": "A quiet half-day on the Adriatic — hidden bays, two swimming stops, snorkeling equipment, stand-up paddleboards and a slide, plus an optional slow lunch aboard a family-run wooden motosailer. Departs Bol around 10:00 and returns approximately 16:00.",
+          "image": "https://excursion-veli-bol.com/og-image.jpg",
+          "brand": {
+            "@id": "https://excursion-veli-bol.com/#business"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "65",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://excursion-veli-bol.com/#book"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "38"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://excursion-veli-bol.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What if the weather is bad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We monitor forecasts closely. If conditions are unsafe we reschedule or fully refund — your choice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it suitable for children?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Family and kids are very welcome. Life jackets available for all ages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I bring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Swimwear, sunscreen, a towel, and anything you want to drink. We bring the rest."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many guests per trip?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Max 40 on the boat, but the average group is around 10."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I confirm my booking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Send us a WhatsApp with your name and preferred date. We'll confirm within a few hours."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

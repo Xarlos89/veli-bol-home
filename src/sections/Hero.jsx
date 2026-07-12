@@ -3,10 +3,12 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden">
       {/* Background */}
       <img
-        src="/images/hero.jpeg"
+        src="/images/hero.webp"
         alt="Veli Bol boat in a hidden Adriatic bay, aerial view"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: '30% 35%' }}
+        fetchpriority="high"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/45 to-navy/20" />
 

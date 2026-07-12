@@ -7,9 +7,11 @@ export default function About() {
           {/* Photo */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-[4/5] bg-cream-dark">
             <img
-              src="/images/veli-bol-pride.jpeg"
+              src="/images/veli-bol-pride.webp"
               alt="The Veli Bol boat with captain"
               className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute bottom-3 right-3 bg-white rounded-2xl p-3 shadow-lg">
               <p className="font-sans text-[10px] text-gray-400 leading-none mb-0.5">🤍 Family-run</p>
