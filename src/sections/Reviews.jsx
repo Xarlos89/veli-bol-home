@@ -35,28 +35,28 @@ function Stars({ center = false }) {
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="bg-navy py-20 sm:py-28">
+    <section id="reviews" className="bg-cream py-20 sm:py-28 border-t border-soft">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-12">
           <p className="label mb-4">Reviews</p>
-          <h2 className="section-heading-light mb-4">100% Recommend</h2>
+          <h2 className="section-heading mb-4">100% Recommend</h2>
           <Stars center />
-          <p className="font-sans text-sm text-white/40 mt-3">
+          <p className="font-sans text-sm text-gray-400 mt-3">
             Based on 38 guest reviews ·{' '}
             <a
               href="https://maps.app.goo.gl/SpNcdWgtLhwKhRzH7?g_st=ac"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber hover:text-white underline underline-offset-2 transition-colors"
+              className="text-amber hover:text-ink underline underline-offset-2 transition-colors"
             >
               View on Google
             </a>
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-12 rounded-2xl border border-amber/30 bg-white/5 p-8 sm:p-10 text-center">
+        <div className="max-w-3xl mx-auto mb-12 rounded-2xl border border-amber/30 bg-white shadow-md p-8 sm:p-10 text-center">
           <p className="label mb-5">As featured in</p>
-          <blockquote className="font-serif italic text-white text-lg sm:text-xl leading-relaxed">
+          <blockquote className="font-serif italic text-ink text-lg sm:text-xl leading-relaxed">
             “The other standout from this visit was a sailing trip we did with
             Milan, the owner of the excursion boat Veli, based in Bol. I will be
             honest — I have done a lot of boat trips along the Dalmatian coast
@@ -64,13 +64,13 @@ export default function Reviews() {
             was just a fantastic experience, and Milan clearly knows what he is
             doing.”
           </blockquote>
-          <p className="font-sans text-sm text-white/60 mt-6">
+          <p className="font-sans text-sm text-gray-500 mt-6">
             Morten Smalby ·{' '}
             <a
               href="https://mortensmalby.com/bol-croatia/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber hover:text-white underline underline-offset-2 transition-colors"
+              className="text-amber hover:text-ink underline underline-offset-2 transition-colors"
             >
               Bol on Brač Island — A Local’s Guide
             </a>
@@ -98,7 +98,7 @@ export default function Reviews() {
             href="https://maps.app.goo.gl/SpNcdWgtLhwKhRzH7?g_st=ac"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline-light text-xs tracking-widest uppercase"
+            className="btn-dark text-xs tracking-widest uppercase"
           >
             Read all reviews on Google
           </a>

@@ -17,6 +17,10 @@ const photos = [
   { src: '/images/rocky-cove-caves-splash.webp', alt: 'Splashing into the sea by the cove caves' },
   { src: '/images/aerial-white-boat-cove.webp', alt: 'Aerial view of a white boat in a cove' },
   { src: '/images/gulet-deck-passengers-ships-wheel.webp', alt: 'Passengers on deck by the ship’s wheel' },
+  { src: '/images/excursion-boat-zlatni-rat-sunset.webp', alt: 'The excursion boat off Zlatni Rat at sunset' },
+  { src: '/images/aerial-bol-sunset.webp', alt: 'Aerial view of Bol under a fiery sunset sky' },
+  { src: '/images/couple-pointing-at-sunset.webp', alt: 'A couple pointing at the sunset from the boat' },
+  { src: '/images/sun-over-headland-sunset.webp', alt: 'The sun setting over the headland and calm sea' },
 ]
 
 function GallerySlot({ src, alt }) {
@@ -28,20 +32,20 @@ function GallerySlot({ src, alt }) {
     )
   }
   return (
-    <div className="aspect-[3/4] sm:aspect-[4/3] rounded-2xl bg-cream-dark flex items-center justify-center">
-      <p className="font-sans text-xs text-gray-400 text-center px-4">{alt}<br /><span className="text-[10px] text-gray-300">Photo coming soon</span></p>
+    <div className="aspect-[3/4] sm:aspect-[4/3] rounded-2xl bg-navy-light flex items-center justify-center">
+      <p className="font-sans text-xs text-white/40 text-center px-4">{alt}<br /><span className="text-[10px] text-white/30">Photo coming soon</span></p>
     </div>
   )
 }
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-cream py-20 sm:py-28 border-t border-soft">
+    <section id="gallery" className="bg-navy py-20 sm:py-28">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-10">
           <p className="label mb-3">Gallery</p>
-          <h2 className="section-heading mb-2">Postcards from the boat</h2>
-          <p className="font-sans text-sm text-gray-400">Real moments from real days out on the Adriatic.</p>
+          <h2 className="section-heading-light mb-2">Postcards from the boat</h2>
+          <p className="font-sans text-sm text-white/40">Real moments from real days out on the Adriatic.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4">

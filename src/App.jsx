@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import Essentials from './sections/Essentials'
 import About from './sections/About'
+import History from './sections/History'
 import Experience from './sections/Experience'
 import FoodOnBoard from './sections/FoodOnBoard'
 import Gallery from './sections/Gallery'
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <Essentials />
         <About />
+        <History />
         <Experience />
         <FoodOnBoard />
         <Gallery />
