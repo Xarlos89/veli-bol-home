@@ -19,7 +19,6 @@ const photos = [
   { src: '/images/gulet-deck-passengers-ships-wheel.webp', alt: 'Passengers on deck by the ship’s wheel' },
   { src: '/images/excursion-boat-zlatni-rat-sunset.webp', alt: 'The excursion boat off Zlatni Rat at sunset' },
   { src: '/images/aerial-bol-sunset.webp', alt: 'Aerial view of Bol under a fiery sunset sky' },
-  { src: '/images/couple-pointing-at-sunset.webp', alt: 'A couple pointing at the sunset from the boat' },
   { src: '/images/sun-over-headland-sunset.webp', alt: 'The sun setting over the headland and calm sea' },
 ]
 
