@@ -28,14 +28,15 @@ src/
     Footer.jsx       address / phone / email / copyright
   sections/          one file per visible scroll section, assembled in App.jsx
     Hero.jsx
-    Essentials.jsx   tour info, pricing, map
-    About.jsx
-    Experience.jsx   dark navy "six reasons" grid
-    FoodOnBoard.jsx  menu add-ons
-    Gallery.jsx      2-col photo grid
-    Reviews.jsx      dark navy testimonials, `reviews` array
-    FAQ.jsx          accordion, `faqs` array (uses useState per item)
-    BookingCTA.jsx   closing call-to-action (#book)
+    Essentials.jsx   tour info, pricing, map (dark)
+    About.jsx        (light)
+    PrivateTour.jsx  private sunset charter, €120/hr, `tiers` array (#private) (dark)
+    Experience.jsx   "reasons to come aboard" grid (dark)
+    FoodOnBoard.jsx  menu add-ons (light)
+    Gallery.jsx      2-col photo grid (dark)
+    Reviews.jsx      testimonials, `reviews` array (light)
+    FAQ.jsx          accordion, `faqs` array (uses useState per item) (dark)
+    BookingCTA.jsx   closing call-to-action (#book) (light)
   App.jsx            imports and orders all sections
   main.jsx           ReactDOM.createRoot
   index.css          @tailwind directives + .label, .section-heading, .btn-dark, .info-card
@@ -53,8 +54,8 @@ public/
 |---|---|---|
 | `cream` | `#F2EDE5` | page background |
 | `cream-dark` | `#E8E1D7` | placeholder slots |
-| `navy` | `#0C1B2B` | Experience section background |
-| `navy-light` | `#142333` | Experience section cards |
+| `navy` | `#0C1B2B` | dark-section backgrounds (Essentials, PrivateTour, Experience, Gallery, FAQ) + Hero gradient |
+| `navy-light` | `#142333` | cards inside dark sections |
 | `amber` | `#C9973A` | labels, icons, accents |
 | `ink` | `#1A1409` | body text |
 | `soft` | `#DDD6CC` | borders, dividers |
@@ -72,15 +73,18 @@ Fonts: **Playfair Display** (serif — headings, logo, italic) · **Inter** (san
 
 ## Section IDs (for anchor links)
 
-`#home` · `#essentials` · `#about` · `#experience` · `#food` · `#gallery` · `#reviews` · `#faq` · `#book` · `#contact` (footer)
+`#home` · `#essentials` · `#about` · `#experience` · `#food` · `#private` · `#gallery` · `#reviews` · `#faq` · `#book` · `#contact` (footer)
 
-Note: the Navbar currently only links to `#home` and `#book` — the other IDs exist for direct/deep linking.
+Note: the Navbar links to `#essentials`, `#about`, `#private`, `#experience`, `#food`, `#gallery`, `#reviews` (the `navLinks` array), plus the logo (`#home`) and the Book button (`#book`). Remaining IDs exist for direct/deep linking.
+
+**Section colour rhythm:** sections strictly alternate dark (`bg-navy`) ↔ light (`bg-cream`) down the page. Order: Hero(dark photo) · Essentials(dark) · About(light) · PrivateTour(dark) · History(light) · Experience(dark) · Food(light) · Gallery(dark) · Reviews(light) · FAQ(dark) · Booking(light). The dark Hero flows straight into the dark Essentials (intentional — the hero photo dissolves into the first section); strict alternation runs from Essentials down. Inserting or reordering a section flips this parity — expect to recolour the sections below it to keep the alternation. Dark sections use `section-heading-light`, `text-white/40–60`, `bg-navy-light` cards; light sections use `section-heading`, `text-gray-400–600`, `bg-white` cards + `border-t border-soft`.
 
 ## Content that changes seasonally
 
 - **Pricing** — `src/sections/Essentials.jsx` — the three-column price table
 - **Food menu** — `src/sections/FoodOnBoard.jsx` — the `menu` array
 - **Tour details** — `src/sections/Essentials.jsx` — the `infoCards` array (duration, schedule, destination, group size)
+- **Private tour rate** — `src/sections/PrivateTour.jsx` — the €120/hr headline and the `tiers` array (what each hour includes)
 
 ## Adding photos
 

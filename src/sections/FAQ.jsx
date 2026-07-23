@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: 'How many guests per trip?',
-    a: 'Max 40 on the boat, but the average group is around 10.',
+    a: 'There’s no fixed cap — some days it’s just a handful, other days the boat is fuller, but there’s always room and it never feels crowded.',
   },
   {
     q: 'How do I confirm my booking?',
