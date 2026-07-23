@@ -6,6 +6,7 @@ import About from './sections/About'
 import History from './sections/History'
 import Experience from './sections/Experience'
 import FoodOnBoard from './sections/FoodOnBoard'
+import PrivateTour from './sections/PrivateTour'
 import Gallery from './sections/Gallery'
 import Reviews from './sections/Reviews'
 import FAQ from './sections/FAQ'
@@ -19,6 +20,7 @@ export default function App() {
         <Hero />
         <Essentials />
         <About />
+        <PrivateTour />
         <History />
         <Experience />
         <FoodOnBoard />
