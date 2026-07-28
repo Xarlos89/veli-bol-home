@@ -56,9 +56,8 @@ export default function Navbar() {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
             </svg>
           </a>
-          {/* TODO: replace with the real Facebook page URL */}
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/193sA2P542/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -68,9 +67,8 @@ export default function Navbar() {
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
           </a>
-          {/* TODO: replace with the real TripAdvisor listing URL */}
           <a
-            href="https://www.tripadvisor.com/"
+            href="https://www.tripadvisor.ca/Attraction_Review-g303802-d34501358-Reviews-Excursion_VELI_Bol-Bol_Brac_Island_Split_Dalmatia_County_Dalmatia.html"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TripAdvisor"
