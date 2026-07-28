@@ -1,8 +1,8 @@
 const infoCards = [
   { label: 'Duration', value: 'Half day', sub: '6h total · 1h sail · 5h swim' },
-  { label: 'Schedule', value: '10:00 – approx. 16:00' },
+  { label: 'Schedule', value: '10:00 – 16:00', sub: 'every day' },
   { label: 'Destination', value: 'Island Hvar', sub: 'across the channel from Bol' },
-  { label: 'Group size', value: 'No fixed cap', sub: 'relaxed groups, never crowded' },
+  { label: 'Group size', value: '16ish', sub: 'as many as can hold onto the ropes' },
 ]
 
 const included = [

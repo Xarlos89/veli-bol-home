@@ -15,7 +15,6 @@ const photos = [
   { src: '/images/rocky-cove-caves-splash.webp', alt: 'Splashing into the sea by the cove caves' },
   { src: '/images/aerial-white-boat-cove.webp', alt: 'Aerial view of a white boat in a cove' },
   { src: '/images/gulet-deck-passengers-ships-wheel.webp', alt: 'Passengers on deck by the ship’s wheel' },
-  { src: '/images/sun-over-headland-sunset.webp', alt: 'The sun setting over the headland and calm sea' },
 ]
 
 function GallerySlot({ src, alt }) {

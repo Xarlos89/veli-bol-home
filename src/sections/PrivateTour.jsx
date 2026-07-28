@@ -83,6 +83,16 @@ export default function PrivateTour() {
                 />
               </div>
             ))}
+            {/* Sunset over the headland — moved here from the gallery */}
+            <div className="col-span-2 aspect-[16/9] rounded-2xl overflow-hidden">
+              <img
+                src="/images/sun-over-headland-sunset.webp"
+                alt="The sun setting over the headland and calm sea"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
           </div>
         </div>
       </div>
