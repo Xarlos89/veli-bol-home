@@ -1,7 +1,7 @@
 const tiers = [
-  { duration: '1 hour', includes: 'A bottle of wine' },
-  { duration: '2 hours', includes: 'Wine + food on board' },
-  { duration: '3 hours', includes: 'Wine, food + a swim stop' },
+  { duration: '1 hour', price: '€150', includes: 'A bottle of wine' },
+  { duration: '2 hours', price: '€300', includes: 'Wine + food on board' },
+  { duration: '3 hours', price: '€400', includes: 'Wine, food + a swim stop' },
 ]
 
 export default function PrivateTour() {
@@ -23,24 +23,27 @@ export default function PrivateTour() {
             {/* Headline rate */}
             <div className="mb-8">
               <p className="font-serif font-bold text-white text-5xl leading-none">
-                €120
+                From €150
               </p>
               <p className="font-sans text-xs text-white/40 mt-2 tracking-wide">
-                per hour · 3 hours max
+                per charter · 3 hours max
               </p>
             </div>
 
             {/* Tiers */}
             <div className="bg-navy-light border border-white/5 rounded-2xl px-5 divide-y divide-white/5 mb-8">
-              {tiers.map(({ duration, includes }) => (
+              {tiers.map(({ duration, price, includes }) => (
                 <div key={duration} className="flex items-start gap-4 py-4">
                   <div className="w-8 h-8 rounded-full bg-amber/15 flex items-center justify-center shrink-0 text-amber">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
-                  <div>
-                    <p className="font-sans font-semibold text-white text-sm mb-0.5">{duration}</p>
+                  <div className="flex-1">
+                    <div className="flex items-baseline justify-between gap-4 mb-0.5">
+                      <p className="font-sans font-semibold text-white text-sm">{duration}</p>
+                      <p className="font-serif font-bold text-amber text-base">{price}</p>
+                    </div>
                     <p className="font-sans text-white/40 text-sm">{includes}</p>
                   </div>
                 </div>
