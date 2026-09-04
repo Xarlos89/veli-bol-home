@@ -1,10 +1,14 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden">
+    <section id="home" aria-label="Veli Bol Excursions — boat tours from Bol, Brač" className="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden">
       {/* Background */}
       <img
         src="/images/hero.webp"
-        alt="Veli Bol boat in a hidden Adriatic bay, aerial view"
+        srcSet="/images/hero-800.webp 800w, /images/hero-1280.webp 1280w, /images/hero.webp 2000w"
+        sizes="100vw"
+        width={2000}
+        height={1059}
+        alt="Aerial view of the Veli Bol excursion boat anchored in a hidden Adriatic bay near Bol on Brač, Croatia"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: '30% 35%' }}
         fetchpriority="high"
@@ -18,13 +22,17 @@ export default function Hero() {
           Bol · Brač · Croatia
         </p>
 
+        {/* The visible wordmark is the h1, so the page's strongest heading also
+            has to carry the query people actually search. The trailing phrase is
+            read by crawlers and screen readers without changing the design. */}
         <h1 className="font-serif font-bold text-white leading-[1.05] mb-6" style={{ fontSize: 'clamp(2.8rem, 8vw, 5.5rem)' }}>
           Veli Bol<br />
           <em>Excursions</em>
+          <span className="sr-only"> — half-day boat tours from Bol, Brač, Croatia</span>
         </h1>
 
         <p className="font-serif italic text-white/90 text-lg sm:text-xl max-w-md leading-snug mb-4">
-          A quiet half-day on the Adriatic — hidden bays, slow lunch, nothing rushed.
+          Half-day boat tours from Bol to the hidden bays of Hvar — swimming stops, a slow lunch, nothing rushed.
         </p>
 
         <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/60 mb-8">

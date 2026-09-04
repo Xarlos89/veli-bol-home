@@ -1,11 +1,11 @@
-const infoCards = [
+export const infoCards = [
   { label: 'Duration', value: 'Half day', sub: '6h total · 1h sail · 5h swim' },
   { label: 'Schedule', value: '10:00 – 16:00', sub: 'every day' },
   { label: 'Destination', value: 'Island Hvar', sub: 'across the channel from Bol' },
   { label: 'Group size', value: '16ish', sub: 'as many as can hold onto the ropes' },
 ]
 
-const included = [
+export const included = [
   'Two different swimming stops per trip',
   'Every day a different bay',
   'Family and couples oriented',
@@ -23,7 +23,7 @@ export default function Essentials() {
 
           {/* Left */}
           <div>
-            <p className="label mb-3">Tour info</p>
+            <p className="label mb-3">Tour info · Half-day trip from Bol</p>
             <h2 className="section-heading-light mb-8">The essentials</h2>
 
             <div className="grid grid-cols-2 gap-3 mb-5">

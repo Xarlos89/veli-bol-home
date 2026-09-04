@@ -8,7 +8,7 @@ export default function About() {
           <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-[4/5] bg-cream-dark">
             <img
               src="/images/veli-bol-pride.webp"
-              alt="The Veli Bol boat with captain"
+              alt="The Veli Bol wooden motosailer with her captain in Bol harbour, Brač"
               className="w-full h-full object-cover"
               loading="lazy"
               decoding="async"

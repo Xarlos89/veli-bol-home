@@ -7,11 +7,11 @@ export default function BookingCTA() {
     >
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="max-w-sm mx-auto text-center">
-          <p className="label mb-4">Book your spot</p>
+          <p className="label mb-4">Book your spot · Bol, Brač</p>
           <h2 className="section-heading mb-4">Ready to join us?</h2>
           <p className="font-sans text-sm text-gray-400 leading-relaxed mb-10">
-            Message us on WhatsApp to check availability and confirm your spot.
-            We reply within a few hours.
+            Message us on WhatsApp to check availability on the boat and confirm your
+            spot. We reply within a few hours.
           </p>
 
           {/* Animated WhatsApp button */}
