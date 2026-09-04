@@ -1,4 +1,4 @@
-const tiers = [
+export const tiers = [
   { duration: '1 hour', price: '€150', includes: 'A bottle of wine' },
   { duration: '2 hours', price: '€300', includes: 'Wine + food on board' },
   { duration: '3 hours', price: '€400', includes: 'Wine, food + a swim stop' },
@@ -12,7 +12,7 @@ export default function PrivateTour() {
 
           {/* Left — pitch + tiers */}
           <div className="md:col-span-1">
-            <p className="label mb-3">Private charter</p>
+            <p className="label mb-3">Private charter · Sunset from Bol</p>
             <h2 className="section-heading-light mb-4">Private sunset tour</h2>
             <p className="font-sans text-sm text-white/60 leading-relaxed mb-8 max-w-md">
               The boat is yours, out on the Adriatic as the light turns to gold. It's an easy,
@@ -71,10 +71,10 @@ export default function PrivateTour() {
           {/* Right — imagery */}
           <div className="md:col-span-2 grid grid-cols-2 gap-3 sm:gap-4">
             {[
-              { src: '/images/aerial-bol-sunset.webp', alt: 'Aerial view of Bol under a fiery sunset sky' },
-              { src: '/images/couple-embracing-sunset-boat.webp', alt: 'Couple embracing at sunset on the boat' },
-              { src: '/images/legs-dangling-off-boat-sunset.webp', alt: 'Legs dangling off the boat at sunset' },
-              { src: '/images/excursion-boat-zlatni-rat-sunset.webp', alt: 'The excursion boat off Zlatni Rat at sunset' },
+              { src: '/images/aerial-bol-sunset.webp', alt: 'Aerial view of Bol on Brač under a fiery sunset sky' },
+              { src: '/images/couple-embracing-sunset-boat.webp', alt: 'Couple embracing on deck during a private sunset charter from Bol' },
+              { src: '/images/legs-dangling-off-boat-sunset.webp', alt: 'Legs dangling off the boat during a sunset cruise on the Adriatic' },
+              { src: '/images/excursion-boat-zlatni-rat-sunset.webp', alt: 'The Veli Bol excursion boat off Zlatni Rat beach at sunset' },
             ].map(({ src, alt }) => (
               <div key={src} className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
@@ -90,7 +90,7 @@ export default function PrivateTour() {
             <div className="col-span-2 aspect-[16/9] rounded-2xl overflow-hidden">
               <img
                 src="/images/sun-over-headland-sunset.webp"
-                alt="The sun setting over the headland and calm sea"
+                alt="The sun setting over the headland and the calm Adriatic off Bol"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

@@ -38,7 +38,7 @@ export default function Reviews() {
     <section id="reviews" className="bg-cream py-20 sm:py-28 border-t border-soft">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-12">
-          <p className="label mb-4">Reviews</p>
+          <p className="label mb-4">Reviews · Boat tours from Bol</p>
           <h2 className="section-heading mb-4">100% Recommend</h2>
           <Stars center />
           <p className="font-sans text-sm text-gray-400 mt-3">

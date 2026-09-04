@@ -1,15 +1,15 @@
 const feature = {
   src: '/images/history-hull-on-the-stocks.webp',
-  alt: 'The wooden hull taking shape on the stocks in Bol',
+  alt: 'The wooden hull of the Veli Bol boat taking shape on the stocks in Bol, 1994',
 }
 
 const photos = [
-  { src: '/images/history-keel-and-ribs.webp', alt: 'The bare keel and ribs, the very start of the build' },
-  { src: '/images/history-shipwrights-at-work.webp', alt: 'Two shipwrights working along the ribs of the hull' },
-  { src: '/images/history-framing-with-sea-view.webp', alt: 'Framing the deck with Bol and the sea behind' },
-  { src: '/images/history-laying-the-deck.webp', alt: 'Laying the fresh timber deck plank by plank' },
-  { src: '/images/history-painting-the-hull.webp', alt: 'Painting the finished wooden hull by hand' },
-  { src: '/images/history-launched-in-bol.webp', alt: 'The finished boat afloat in Bol harbour' },
+  { src: '/images/history-keel-and-ribs.webp', alt: 'The bare keel and ribs at the start of the build in Bol' },
+  { src: '/images/history-shipwrights-at-work.webp', alt: 'Two Dalmatian shipwrights working along the ribs of the wooden hull' },
+  { src: '/images/history-framing-with-sea-view.webp', alt: 'Framing the deck with the town of Bol and the Adriatic behind' },
+  { src: '/images/history-laying-the-deck.webp', alt: 'Laying the timber deck of the motosailer plank by plank' },
+  { src: '/images/history-painting-the-hull.webp', alt: 'Painting the finished wooden hull by hand in the yard above Bol harbour' },
+  { src: '/images/history-launched-in-bol.webp', alt: 'The finished Veli Bol boat afloat in Bol harbour on Brač' },
 ]
 
 export default function History() {

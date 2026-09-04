@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# The generated sitemap (see scripts/generate-sitemap.mjs) also lists every
+# photo on the page, so the gallery can be indexed by Google Images.
 Sitemap: https://excursion-veli-bol.com/sitemap.xml

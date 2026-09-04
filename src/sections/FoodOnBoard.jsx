@@ -1,4 +1,4 @@
-const menu = [
+export const menu = [
   {
     name: 'Full grill',
     desc: '3-course meal: hot appetisers (anchovies on bruschetta, grilled cheese with olives) · grilled mackerel with vegetables · fresh crepes with Nutella, Lino Lada, fig jam or quince marmalade. Local red wine & water included.',
@@ -30,7 +30,7 @@ export default function FoodOnBoard() {
             <svg className="w-3.5 h-3.5 text-amber" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0L3 18m0-13.5h18" />
             </svg>
-            <p className="label">On board</p>
+            <p className="label">On board · Croatian food</p>
           </div>
 
           <h2 className="section-heading mb-2">Food on board</h2>

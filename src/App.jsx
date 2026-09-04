@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import StructuredData from './seo/StructuredData'
 import Hero from './sections/Hero'
 import Essentials from './sections/Essentials'
 import About from './sections/About'
@@ -30,6 +31,7 @@ export default function App() {
         <BookingCTA />
       </main>
       <Footer />
+      <StructuredData />
     </>
   )
 }

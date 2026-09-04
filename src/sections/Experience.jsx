@@ -87,7 +87,7 @@ export default function Experience() {
     <section id="experience" className="bg-navy py-20 sm:py-28">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-12">
-          <p className="label mb-3">The experience</p>
+          <p className="label mb-3">The experience · A day on the Adriatic</p>
           <h2 className="section-heading-light">Reasons to come aboard</h2>
         </div>
 
