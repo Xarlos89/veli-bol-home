@@ -1,4 +1,5 @@
-const reviews = [
+// Also the source for the Product review snippets — see src/seo/schema.js.
+export const reviews = [
   {
     name: 'Sofia M.',
     country: 'Italy',

@@ -4,6 +4,7 @@
 import { SITE_URL, business, pricing, seo } from './business.js'
 import { faqs } from '../sections/FAQ.jsx'
 import { tiers } from '../sections/PrivateTour.jsx'
+import { reviews } from '../sections/Reviews.jsx'
 
 const id = (fragment) => `${SITE_URL}/#${fragment}`
 
@@ -11,6 +12,17 @@ const id = (fragment) => `${SITE_URL}/#${fragment}`
 const amount = (price) => price.replace(/[^\d.]/g, '')
 
 const priceNumbers = tiers.map((t) => Number(amount(t.price)))
+
+// The guest testimonials exactly as the Reviews section shows them — Search
+// Console flags a Product with no `review`, and Google requires that any review
+// in the markup also be visible on the page. Each card renders five filled
+// stars, so ratingValue is 5.
+const productReviews = reviews.map(({ name, text }) => ({
+  '@type': 'Review',
+  author: { '@type': 'Person', name },
+  reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5', worstRating: '1' },
+  reviewBody: text,
+}))
 
 const organization = {
   '@type': ['TravelAgency', 'LocalBusiness'],
@@ -78,7 +90,10 @@ const excursion = {
     '@type': 'AggregateRating',
     ratingValue: business.rating.value,
     reviewCount: business.rating.count,
+    bestRating: '5',
+    worstRating: '1',
   },
+  review: productReviews,
 }
 
 // The excursion described as a trip as well as a product — this is the shape
@@ -123,15 +138,21 @@ const trip = {
   offers: { '@id': id('excursion') },
 }
 
+// Typed as a Service, not a Product. Search Console flags any Product without a
+// rating, and the charter has no reviews of its own — the 38 Google reviews are
+// of the business as a whole, and reusing them here would be claiming a rating
+// for something nobody has rated. Service carries the same price range without
+// asking for one.
 const privateCharter = {
-  '@type': 'Product',
+  '@type': 'Service',
   '@id': id('private'),
   name: 'Private Sunset Boat Charter from Bol',
   description:
     'The whole boat to yourselves for a sunset charter out of Bol, booked by the hour — one to three hours, with wine, food on board and a swim stop depending on the length.',
   image: `${SITE_URL}/images/aerial-bol-sunset.webp`,
-  brand: { '@id': id('business') },
-  category: 'Private boat charter',
+  provider: { '@id': id('business') },
+  serviceType: 'Private boat charter',
+  areaServed: { '@type': 'Place', name: 'Bol, Brač, Croatia' },
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: pricing.currency,
